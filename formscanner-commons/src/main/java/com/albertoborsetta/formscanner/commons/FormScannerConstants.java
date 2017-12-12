@@ -8,14 +8,16 @@ import java.util.Arrays;
 import com.albertoborsetta.formscanner.api.commons.Constants;
 import com.albertoborsetta.formscanner.commons.configuration.FormScannerConfigurationKeys;
 import com.albertoborsetta.formscanner.commons.translation.FormScannerTranslationKeys;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class FormScannerConstants extends Constants {
 
 	// Version
 	public static final String VERSION_KEY = "$VERSION";
-	public static final String VERSION = "1.1.5-SNAPSHOT";
+	public static final String VERSION = "1.1.4";
 	public static final String COPYRIGHT_KEY = "$COPYRIGHT";
-	public static final String COPYRIGHT = "Copyright 2013-2017";
+	public static final String COPYRIGHT = "Copyright 2013-".concat(new SimpleDateFormat("yyyy").format(new Date()));
 
 	// Actions
 	public static final String RENAME_FILES_FIRST = "RENAME_FILES_FIRST";
