@@ -47,7 +47,8 @@ public class FormScannerDesktop extends JFrame {
 
         setName(FormScannerConstants.Frame.DESKTOP_FRAME.name());
 
-        setTitle(StringUtils.replace(FormScannerTranslation.getTranslationFor(FormScannerTranslationKeys.FORMSCANNER_MAIN_TITLE), FormScannerConstants.VERSION_KEY, FormScannerConstants.VERSION));
+//        setTitle(StringUtils.replace(FormScannerTranslation.getTranslationFor(FormScannerTranslationKeys.FORMSCANNER_MAIN_TITLE), FormScannerConstants.VERSION_KEY, FormScannerConstants.VERSION));
+        setTitle("OMR Master");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         getContentPane().setLayout(new BorderLayout(0, 0));

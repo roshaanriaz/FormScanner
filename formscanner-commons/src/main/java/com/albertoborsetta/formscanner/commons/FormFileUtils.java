@@ -190,8 +190,9 @@ public class FormFileUtils extends JFileChooser {
 	private void setTemplateFilter() {
 		resetChoosableFileFilters();
 		FileNameExtensionFilter templateFilter = new FileNameExtensionFilter(
-				FormScannerTranslation.getTranslationFor(FormScannerTranslationKeys.TEMPLATE_FILE), "xtmpl");
+				FormScannerTranslation.getTranslationFor("OMRMaster template (.xtmpl)"), "xtmpl");
 		setFileFilter(templateFilter);
+                
 	}
 
 	protected void setCsvFilter() {

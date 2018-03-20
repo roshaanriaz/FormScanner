@@ -11,7 +11,7 @@
         <module>formscanner-distribution</module>
         <module>formscanner-commons</module>
         <module>formscanner-gui</module>
-        <module>formscanner-database</module>
+<!--        <module>formscanner-database</module>-->
     </modules>
     <build>
         <plugins>

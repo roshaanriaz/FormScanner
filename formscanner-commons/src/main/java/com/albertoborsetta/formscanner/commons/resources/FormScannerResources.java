@@ -21,6 +21,7 @@ public class FormScannerResources {
 
 	public static void setResources(String path) {
 		iconsPath = path + "/icons/";
+//                iconsPath = "/home/adnan0944/formscanner-code/formscanner-commons/src/main/resources/icons/";
 		licensePath = path + "/license/";
 	}
 
@@ -42,7 +43,9 @@ public class FormScannerResources {
 	}
 
 	public static Image getFormScannerIcon() {
-		try {
+		try { 
+                        System.out.println("printing icon path: "+ iconsPath);
+                        
 			Image icon = ImageIO.read(new File(
 					iconsPath + FormScannerResourcesKeys.FORMSCANNER_ICON + PNG));
 			return icon;

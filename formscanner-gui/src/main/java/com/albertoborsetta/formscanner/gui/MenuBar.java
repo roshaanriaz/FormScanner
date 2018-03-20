@@ -59,7 +59,7 @@ public final class MenuBar extends JMenuBar implements MenuView {
 		add(editMenu);
 		add(templateMenu);
 		add(settingsMenu);
-		add(helpMenu);
+//		add(helpMenu);
 	}
 
 	private JMenu getFileMenu() {
@@ -261,7 +261,7 @@ public final class MenuBar extends JMenuBar implements MenuView {
 	}
 
 	public JMenu getSettingsMenu() {
-		languageMenuItem = getLanguagesMenu();
+//		languageMenuItem = getLanguagesMenu();
 		optionsMenuItem = new MenuItemBuilder(
 				FormScannerTranslation
 						.getTranslationFor(FormScannerTranslationKeys.OPTIONS),
@@ -270,7 +270,7 @@ public final class MenuBar extends JMenuBar implements MenuView {
 				.withActionListener(formScannerController)
 				.withAccelerator(
 						KeyStroke.getKeyStroke(
-								KeyEvent.VK_PLUS, InputEvent.CTRL_MASK))
+								KeyEvent.VK_Y, InputEvent.CTRL_MASK))
 				.withIcon(
 						FormScannerResources
 								.getIconFor(FormScannerResourcesKeys.CONFIG_ICON_16))
@@ -283,7 +283,7 @@ public final class MenuBar extends JMenuBar implements MenuView {
 				.withMnemonic(
 						FormScannerTranslation
 								.getMnemonicFor(FormScannerTranslationKeys.SETTINGS_MENU_MNEMONIC))
-				.add(languageMenuItem).add(optionsMenuItem).build();
+				.add(optionsMenuItem).build();
 	}
 
 	private JMenu getLanguagesMenu() {

@@ -133,7 +133,7 @@ public class FormScannerModel {
 		String installPath = URLDecoder.decode(path, "UTF-8");
 		installPath = StringUtils.substringBeforeLast(installPath, "lib");
 		installPath = StringUtils.defaultIfBlank(System.getProperty("FormScanner_HOME"), installPath);
-                installPath = "/home/adnan0944/formscanner-code/formscanner-distribution/target/formscanner-1.1.4-bin/";
+//                installPath = "/home/adnan0944/formscanner-code/formscanner-distribution/target/formscanner-1.1.4-bin";
                         
 		System.setProperty("log4j.configurationFile", "file:\\" + installPath + "/config/log4j.xml");
 		logger = LogManager.getLogger(FormScannerModel.class.getName());
